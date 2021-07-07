@@ -28,6 +28,7 @@ def calirbation():
     print('%.20f' % np.polyfit(y, x, 3)[3])
     fit = np.polyfit(y, x, 3)
 
-    return {"1":'%.20f' % np.polyfit(y, x, 3)[0],"2":'%.20f' % np.polyfit(y, x, 3)[1],"3":'%.20f' % np.polyfit(y, x, 3)[2],"4":'%.20f' % np.polyfit(y, x, 3)[3],}
+
+    return {"1":'%.20f' % fit[0],"2":'%.20f' % fit[1],"3":'%.20f' % fit[2],"4":'%.20f' % fit[3],}
 if __name__ == '__main__':
     app.run()
