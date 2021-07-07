@@ -20,6 +20,7 @@ def calirbation():
    # y = [274046, 523207, 1015404, 1494790, 1978860, 2461945, 2951055]
     x =  content['x']
     y =  content['y']
+    d = content['d']
     print(np.polyfit(y, x, 3))
     print('%.20f' % np.polyfit(y, x, 3)[0])
     print('%.20f' % np.polyfit(y, x, 3)[1])
